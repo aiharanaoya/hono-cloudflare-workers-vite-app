@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.13.18",
-    "vite": "7.1.10",
+    "vite": "7.1.12",
     "vite-ssr-components": "0.5.1",
     "wrangler": "4.43.0"
   }
