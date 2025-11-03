@@ -1,20 +1,29 @@
 {
-  "name": "hono-cloudflare-workers-vite-app",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "$npm_execpath run build && vite preview",
-    "deploy": "$npm_execpath run build && wrangler deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
-  },
-  "dependencies": {
-    "hono": "4.10.4"
-  },
-  "devDependencies": {
-    "@cloudflare/vite-plugin": "1.13.18",
-    "vite": "7.1.12",
-    "vite-ssr-components": "0.5.1",
-    "wrangler": "4.45.3"
-  }
+	"name": "hono-cloudflare-workers-vite-app",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "$npm_execpath run build && vite preview",
+		"deploy": "$npm_execpath run build && wrangler deploy",
+		"cf-typegen": "wrangler types --env-interface CloudflareBindings",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check",
+		"lint:fix": "biome check --write"
+	},
+	"dependencies": {
+		"destyle.css": "4.0.1",
+		"hono": "4.10.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.2",
+		"@cloudflare/vite-plugin": "1.13.18",
+		"vite": "7.1.12",
+		"vite-ssr-components": "0.5.1",
+		"wrangler": "4.45.3"
+	},
+	"packageManager": "pnpm@10.20.0",
+	"volta": {
+		"node": "24.11.0"
+	}
 }

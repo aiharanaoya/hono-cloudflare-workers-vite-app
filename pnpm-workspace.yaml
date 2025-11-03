@@ -1,0 +1,3 @@
+managePackageManagerVersions: true
+saveExact: true
+minimumReleaseAge: 1440
