@@ -12,8 +12,8 @@ importers:
         specifier: 4.0.1
         version: 4.0.1
       hono:
-        specifier: 4.10.5
-        version: 4.10.5
+        specifier: 4.10.6
+        version: 4.10.6
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.5
@@ -962,8 +962,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  hono@4.10.5:
-    resolution: {integrity: sha512-h/MXuTkoAK8NG1EfDp0jI1YLf6yGdDnfkebRO2pwEh5+hE3RAJFXkCsnD0vamSiARK4ZrB6MY+o3E/hCnOyHrQ==}
+  hono@4.10.6:
+    resolution: {integrity: sha512-BIdolzGpDO9MQ4nu3AUuDwHZZ+KViNm+EZ75Ae55eMXMqLVhDFqEMXxtUe9Qh8hjL+pIna/frs2j6Y2yD5Ua/g==}
     engines: {node: '>=16.9.0'}
 
   is-arrayish@0.3.4:
@@ -1889,7 +1889,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  hono@4.10.5: {}
+  hono@4.10.6: {}
 
   is-arrayish@0.3.4: {}
 
