@@ -1,1 +1,1 @@
-# hono-cloudflare-workers-vite-app
+# hono-react-vite-app
