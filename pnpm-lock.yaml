@@ -12,8 +12,8 @@ importers:
         specifier: 4.0.1
         version: 4.0.1
       hono:
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       react:
         specifier: 19.2.4
         version: 19.2.4
@@ -1109,8 +1109,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  hono@4.11.8:
-    resolution: {integrity: sha512-eVkB/CYCCei7K2WElZW9yYQFWssG0DhaDhVvr7wy5jJ22K+ck8fWW0EsLpB0sITUTvPnc97+rrbQqIr5iqiy9Q==}
+  hono@4.11.9:
+    resolution: {integrity: sha512-Eaw2YTGM6WOxA6CXbckaEvslr2Ne4NFsKrvc0v97JD5awbmeBLO5w9Ho9L9kmKonrwF9RJlW6BxT1PVv/agBHQ==}
     engines: {node: '>=16.9.0'}
 
   jiti@2.6.1:
@@ -2200,7 +2200,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  hono@4.11.8: {}
+  hono@4.11.9: {}
 
   jiti@2.6.1: {}
 
