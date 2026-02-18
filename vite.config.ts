@@ -6,9 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
 	plugins: [
-		react({
-			jsxRuntime: 'automatic',
-		}),
+		react({ jsxRuntime: 'automatic' }),
 		cloudflare(),
 		tailwindcss(),
 		tsconfigPaths(),
