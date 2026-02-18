@@ -48,9 +48,6 @@ importers:
       vite:
         specifier: 7.3.1
         version: 7.3.1(jiti@2.6.1)(lightningcss@1.30.2)
-      vite-ssr-components:
-        specifier: 0.5.2
-        version: 0.5.2
       vite-tsconfig-paths:
         specifier: 6.1.1
         version: 6.1.1(typescript@5.9.3)(vite@7.3.1(jiti@2.6.1)(lightningcss@1.30.2))
@@ -1170,10 +1167,6 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  vite-ssr-components@0.5.2:
-    resolution: {integrity: sha512-1a8YThRwyyu1gGjc1Ral9Q4uS+n0D4GydhbkVd9c1SA1YNgXyrOizttped87C1ItEznQzhiCyQjaOcYnXa0zMA==}
-    engines: {node: '>=18.0.0'}
-
   vite-tsconfig-paths@6.1.1:
     resolution: {integrity: sha512-2cihq7zliibCCZ8P9cKJrQBkfgdvcFkOOc3Y02o3GWUDLgqjWsZudaoiuOwO/gzTzy17cS5F7ZPo4bsnS4DGkg==}
     peerDependencies:
@@ -2143,14 +2136,6 @@ snapshots:
       browserslist: 4.28.1
       escalade: 3.2.0
       picocolors: 1.1.1
-
-  vite-ssr-components@0.5.2:
-    dependencies:
-      '@babel/parser': 7.29.0
-      '@babel/traverse': 7.29.0
-      picomatch: 4.0.3
-    transitivePeerDependencies:
-      - supports-color
 
   vite-tsconfig-paths@6.1.1(typescript@5.9.3)(vite@7.3.1(jiti@2.6.1)(lightningcss@1.30.2)):
     dependencies:
