@@ -11,4 +11,15 @@ export default defineConfig({
 		tailwindcss(),
 		tsconfigPaths(),
 	],
+	build: {
+		rollupOptions: {
+			input: {
+				islands: './src/islands.tsx',
+			},
+			output: {
+				entryFileNames: '[name].js',
+				dir: 'public',
+			},
+		},
+	},
 });

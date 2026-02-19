@@ -12,6 +12,7 @@
 		"lint:fix": "biome check --write"
 	},
 	"dependencies": {
+		"date-fns": "4.1.0",
 		"destyle.css": "4.0.1",
 		"hono": "4.11.9",
 		"react": "19.2.4",
