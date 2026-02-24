@@ -6,8 +6,7 @@
 			"**/*",
 			"!**/dist",
 			"!**/node_modules",
-			"!**/.wrangler",
-			"!**/public"
+			"!**/.wrangler"
 		]
 	},
 	"formatter": {
