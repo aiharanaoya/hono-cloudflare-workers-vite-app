@@ -10,7 +10,6 @@
 		"types": ["vite/client"],
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
-		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./src/*"]
 		}
