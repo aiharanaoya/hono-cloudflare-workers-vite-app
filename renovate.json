@@ -4,5 +4,17 @@
 	"lockFileMaintenance": {
 		"enabled": true
 	},
+	"packageRules": [
+		{
+			"matchDepTypes": ["devDependencies"],
+			"matchUpdateTypes": ["minor", "patch"],
+			"automerge": true
+		},
+		{
+			"matchDepTypes": ["dependencies"],
+			"matchUpdateTypes": ["patch"],
+			"automerge": true
+		}
+	],
 	"minimumReleaseAge": "3 days"
 }
