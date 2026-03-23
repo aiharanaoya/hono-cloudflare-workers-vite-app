@@ -1,5 +1,3 @@
-import { format } from 'date-fns';
-import { ja } from 'date-fns/locale';
 import type { FC } from 'react';
 import type { Message } from '@/types';
 
@@ -34,9 +32,13 @@ export const MessageList: FC<MessageListProps> = ({ messages }) => {
 							{message.author}
 						</h3>
 						<time className="text-sm leading-relaxed text-gray-500">
-							{format(new Date(message.timestamp), 'yyyy年M月d日 HH:mm', {
-								locale: ja,
-							})}
+							{new Intl.DateTimeFormat('ja-JP', {
+								year: 'numeric',
+								month: 'long',
+								day: 'numeric',
+								hour: '2-digit',
+								minute: '2-digit',
+							}).format(new Date(message.timestamp))}
 						</time>
 					</div>
 					<p className="text-base leading-relaxed text-gray-700 whitespace-pre-wrap">
