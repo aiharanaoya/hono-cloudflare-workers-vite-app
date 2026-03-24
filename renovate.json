@@ -6,13 +6,7 @@
 	},
 	"packageRules": [
 		{
-			"matchDepTypes": ["devDependencies"],
 			"matchUpdateTypes": ["minor", "patch"],
-			"automerge": true
-		},
-		{
-			"matchDepTypes": ["dependencies"],
-			"matchUpdateTypes": ["patch"],
 			"automerge": true
 		}
 	],
