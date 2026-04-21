@@ -2,7 +2,13 @@
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["**/*", "!**/dist", "!**/node_modules", "!**/.wrangler"]
+		"includes": [
+			"**/*",
+			"!**/dist",
+			"!**/node_modules",
+			"!**/.wrangler",
+			"!**/routeTree.gen.ts"
+		]
 	},
 	"formatter": {
 		"enabled": true

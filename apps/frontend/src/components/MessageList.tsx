@@ -1,11 +1,42 @@
+import type { Message } from '@app/backend';
+import { useQuery } from '@tanstack/react-query';
 import type { FC } from 'react';
-import type { Message } from '@/types';
+import { api } from '@/lib/api';
 
-interface MessageListProps {
-	messages: Message[];
+async function fetchMessages(): Promise<Message[]> {
+	const res = await api.api.messages.$get();
+	if (!res.ok) throw new Error('Failed to fetch messages');
+	return res.json();
 }
 
-export const MessageList: FC<MessageListProps> = ({ messages }) => {
+export const MessageList: FC = () => {
+	const {
+		data: messages = [],
+		isLoading,
+		isError,
+	} = useQuery({
+		queryKey: ['messages'],
+		queryFn: fetchMessages,
+	});
+
+	if (isLoading) {
+		return (
+			<div className="bg-white border border-gray-200 rounded-lg p-12 text-center">
+				<p className="text-base leading-relaxed text-gray-500">読み込み中...</p>
+			</div>
+		);
+	}
+
+	if (isError) {
+		return (
+			<div className="bg-white border border-gray-200 rounded-lg p-12 text-center">
+				<p className="text-base leading-relaxed text-red-500">
+					メッセージの取得に失敗しました
+				</p>
+			</div>
+		);
+	}
+
 	if (messages.length === 0) {
 		return (
 			<div className="bg-white border border-gray-200 rounded-lg p-12 text-center">

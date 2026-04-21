@@ -1,3 +1,13 @@
+packages:
+  - 'apps/*'
+
+catalog:
+  typescript: "6.0.3"
+  hono: "4.12.14"
+
+onlyBuiltDependencies:
+  - workerd
+
 managePackageManagerVersions: true
 saveExact: true
 minimumReleaseAge: 1440

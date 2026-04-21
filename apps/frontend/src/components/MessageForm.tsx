@@ -1,36 +1,34 @@
-import { type FC, type SubmitEvent, useState } from 'react';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { type FC, type FormEvent, useState } from 'react';
+import { api } from '@/lib/api';
 
 export const MessageForm: FC = () => {
 	const [author, setAuthor] = useState('');
 	const [content, setContent] = useState('');
-	const [isSubmitting, setIsSubmitting] = useState(false);
+	const queryClient = useQueryClient();
 
-	const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
+	const mutation = useMutation({
+		mutationFn: async () => {
+			const res = await api.api.messages.$post({
+				json: { author: author.trim(), content: content.trim() },
+			});
+			if (!res.ok) throw new Error('投稿に失敗しました');
+			return res.json();
+		},
+		onSuccess: () => {
+			setAuthor('');
+			setContent('');
+			queryClient.invalidateQueries({ queryKey: ['messages'] });
+		},
+		onError: () => {
+			alert('投稿に失敗しました');
+		},
+	});
+
+	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		if (!author.trim() || !content.trim()) return;
-
-		setIsSubmitting(true);
-
-		try {
-			const res = await fetch('/api/messages', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({
-					author: author.trim(),
-					content: content.trim(),
-				}),
-			});
-
-			if (res.ok) {
-				window.location.reload();
-			} else {
-				alert('投稿に失敗しました');
-			}
-		} catch {
-			alert('エラーが発生しました');
-		} finally {
-			setIsSubmitting(false);
-		}
+		mutation.mutate();
 	};
 
 	return (
@@ -77,11 +75,11 @@ export const MessageForm: FC = () => {
 			</div>
 			<button
 				type="submit"
-				disabled={isSubmitting}
+				disabled={mutation.isPending}
 				className="w-full text-base font-medium leading-relaxed bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
 			>
 				<span>📤</span>
-				{isSubmitting ? '投稿中...' : '投稿する'}
+				{mutation.isPending ? '投稿中...' : '投稿する'}
 			</button>
 		</form>
 	);

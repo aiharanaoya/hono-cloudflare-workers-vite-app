@@ -1,33 +1,21 @@
 {
 	"name": "hono-react-vite-app",
 	"type": "module",
+	"workspaces": [
+		"apps/backend",
+		"apps/frontend"
+	],
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc --noEmit && vite build",
-		"preview": "$npm_execpath run build && vite preview",
-		"deploy": "$npm_execpath run build && wrangler deploy",
-		"cf-typegen": "wrangler types --env-interface CloudflareBindings",
-		"typecheck": "tsc --noEmit",
-		"lint": "biome check",
-		"lint:fix": "biome check --write"
-	},
-	"dependencies": {
-		"hono": "4.12.14",
-		"react": "19.2.5",
-		"react-dom": "19.2.5"
+		"dev": "pnpm --parallel --stream --filter './apps/**' run dev",
+		"build": "pnpm --filter @app/frontend build && pnpm --filter @app/backend build",
+		"typecheck": "pnpm --filter @app/frontend typecheck && pnpm --filter @app/backend typecheck",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"deploy:frontend": "pnpm --filter @app/frontend deploy",
+		"deploy:backend": "pnpm --filter @app/backend deploy"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.12",
-		"@cloudflare/vite-plugin": "1.32.3",
-		"@tailwindcss/vite": "4.2.2",
-		"@types/react": "19.2.14",
-		"@types/react-dom": "19.2.3",
-		"@vitejs/plugin-react": "6.0.1",
-		"tailwindcss": "4.2.2",
-		"typescript": "6.0.3",
-		"vite": "8.0.8",
-		"vite-tsconfig-paths": "6.1.1",
-		"wrangler": "4.83.0"
+		"@biomejs/biome": "2.4.12"
 	},
 	"packageManager": "pnpm@10.33.0"
 }
