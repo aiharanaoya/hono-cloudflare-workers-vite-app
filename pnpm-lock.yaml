@@ -25,13 +25,13 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: 0.7.6
-        version: 0.7.6(hono@4.12.14)(zod@3.24.4)
+        version: 0.7.6(hono@4.12.14)(zod@3.25.76)
       hono:
         specifier: 'catalog:'
         version: 4.12.14
       zod:
-        specifier: 3.24.4
-        version: 3.24.4
+        specifier: 3.25.76
+        version: 3.25.76
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20260418.1
@@ -1492,8 +1492,8 @@ packages:
   youch@4.1.0-beta.10:
     resolution: {integrity: sha512-rLfVLB4FgQneDr0dv1oddCVZmKjcJ6yX6mS4pU82Mq/Dt9a3cLZQ62pDBL4AUO+uVrCvtWz3ZFUL2HFAFJ/BXQ==}
 
-  zod@3.24.4:
-    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
 snapshots:
 
@@ -1846,10 +1846,10 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/zod-validator@0.7.6(hono@4.12.14)(zod@3.24.4)':
+  '@hono/zod-validator@0.7.6(hono@4.12.14)(zod@3.25.76)':
     dependencies:
       hono: 4.12.14
-      zod: 3.24.4
+      zod: 3.25.76
 
   '@img/colour@1.1.0': {}
 
@@ -2163,7 +2163,7 @@ snapshots:
       recast: 0.23.11
       source-map: 0.7.6
       tsx: 4.21.0
-      zod: 3.24.4
+      zod: 3.25.76
     transitivePeerDependencies:
       - supports-color
 
@@ -2182,7 +2182,7 @@ snapshots:
       babel-dead-code-elimination: 1.0.12
       chokidar: 3.6.0
       unplugin: 2.3.11
-      zod: 3.24.4
+      zod: 3.25.76
     optionalDependencies:
       '@tanstack/react-router': 1.131.10(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       vite: 8.0.8(esbuild@0.27.3)(jiti@2.6.1)(tsx@4.21.0)
@@ -2679,4 +2679,4 @@ snapshots:
       cookie: 1.1.1
       youch-core: 0.3.3
 
-  zod@3.24.4: {}
+  zod@3.25.76: {}
