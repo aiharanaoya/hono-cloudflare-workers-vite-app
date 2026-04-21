@@ -9,7 +9,7 @@ export const MessageForm: FC = () => {
 
 	const mutation = useMutation({
 		mutationFn: async () => {
-			const res = await api['api']['messages'].$post({
+			const res = await api.api.messages.$post({
 				json: { author: author.trim(), content: content.trim() },
 			});
 			if (!res.ok) throw new Error('投稿に失敗しました');

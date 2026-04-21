@@ -1,16 +1,20 @@
+import type { Message } from '@app/backend';
 import { useQuery } from '@tanstack/react-query';
 import type { FC } from 'react';
 import { api } from '@/lib/api';
-import type { Message } from '@app/backend';
 
 async function fetchMessages(): Promise<Message[]> {
-	const res = await api['api']['messages'].$get();
+	const res = await api.api.messages.$get();
 	if (!res.ok) throw new Error('Failed to fetch messages');
 	return res.json();
 }
 
 export const MessageList: FC = () => {
-	const { data: messages = [], isLoading, isError } = useQuery({
+	const {
+		data: messages = [],
+		isLoading,
+		isError,
+	} = useQuery({
 		queryKey: ['messages'],
 		queryFn: fetchMessages,
 	});
