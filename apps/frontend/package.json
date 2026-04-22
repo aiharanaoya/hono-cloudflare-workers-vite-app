@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@app/backend": "workspace:*",
-		"@tanstack/react-query": "5.80.6",
+		"@tanstack/react-query": "5.99.1",
 		"@tanstack/react-router": "1.131.10",
 		"hono": "catalog:",
 		"react": "19.2.5",
