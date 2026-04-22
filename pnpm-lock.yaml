@@ -45,6 +45,9 @@ importers:
 
   apps/frontend:
     dependencies:
+      '@aiharanaoya/ui':
+        specifier: 0.0.2
+        version: 0.0.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@app/backend':
         specifier: workspace:*
         version: link:../backend
@@ -90,6 +93,12 @@ importers:
         version: 8.0.8(esbuild@0.27.3)(jiti@2.6.1)(tsx@4.21.0)
 
 packages:
+
+  '@aiharanaoya/ui@0.0.2':
+    resolution: {integrity: sha512-EGdu17sSMygNGQDMrDq7UfcUyuKXTyhvbgN6pu7xNpCFgAhsvJV26YxZ99mreL61tePJXw8c1BRVZGzc6Y8e1w==, tarball: https://npm.pkg.github.com/download/@aiharanaoya/ui/0.0.2/4b2aa0490f7d0b1138dab701f1d747be1e75a35d}
+    peerDependencies:
+      react: ^19
+      react-dom: ^19
 
   '@babel/code-frame@7.29.0':
     resolution: {integrity: sha512-9NhCeYjq9+3uxgdtp20LSiJXJvN0FeCtNGpJxuMFZ1Kv3cWUNb6DOhJwUvcVCzKGR66cw4njwM6hrJLqgOwbcw==}
@@ -1429,6 +1438,11 @@ packages:
     resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
 snapshots:
+
+  '@aiharanaoya/ui@0.0.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
 
   '@babel/code-frame@7.29.0':
     dependencies:

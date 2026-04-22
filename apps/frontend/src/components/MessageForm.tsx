@@ -1,3 +1,4 @@
+import { Button, Input } from '@aiharanaoya/ui';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { type FC, type FormEvent, useState } from 'react';
 import { api } from '@/lib/api';
@@ -46,12 +47,11 @@ export const MessageForm: FC = () => {
 				>
 					名前
 				</label>
-				<input
+				<Input
 					type="text"
 					id="author"
 					value={author}
 					onChange={(e) => setAuthor(e.target.value)}
-					className="w-full text-base leading-relaxed px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-gray-900"
 					placeholder="あなたの名前を入力"
 					required
 				/>
@@ -73,14 +73,16 @@ export const MessageForm: FC = () => {
 					required
 				/>
 			</div>
-			<button
+			<Button
 				type="submit"
+				variant="primary"
+				size="lg"
 				disabled={mutation.isPending}
-				className="w-full text-base font-medium leading-relaxed bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
+				style={{ width: '100%' }}
 			>
 				<span>📤</span>
 				{mutation.isPending ? '投稿中...' : '投稿する'}
-			</button>
+			</Button>
 		</form>
 	);
 };

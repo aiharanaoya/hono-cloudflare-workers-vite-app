@@ -11,3 +11,5 @@ onlyBuiltDependencies:
 managePackageManagerVersions: true
 saveExact: true
 minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - "@aiharanaoya/ui"
