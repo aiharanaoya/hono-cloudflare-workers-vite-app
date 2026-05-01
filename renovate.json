@@ -1,7 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:recommended"],
-	"npmrc": "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}",
+	"hostRules": [
+		{
+			"matchHost": "npm.pkg.github.com",
+			"hostType": "npm"
+		}
+	],
 	"lockFileMaintenance": {
 		"enabled": true
 	},
