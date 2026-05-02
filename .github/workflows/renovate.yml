@@ -19,4 +19,3 @@ jobs:
         env:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           RENOVATE_SECRETS: '{"GITHUB_NPM_TOKEN": "${{ secrets.GITHUB_TOKEN }}"}'
-          LOG_LEVEL: debug
