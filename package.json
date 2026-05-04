@@ -15,7 +15,7 @@
 		"deploy:backend": "pnpm --filter @app/backend deploy"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.12"
+		"@biomejs/biome": "2.4.14"
 	},
 	"packageManager": "pnpm@10.33.2"
 }
