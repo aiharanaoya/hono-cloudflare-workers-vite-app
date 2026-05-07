@@ -15,7 +15,7 @@
 	"dependencies": {
 		"@hono/zod-validator": "0.7.6",
 		"hono": "catalog:",
-		"zod": "4.3.6"
+		"zod": "4.4.3"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "4.20260426.1",
