@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     hono:
-      specifier: 4.12.14
-      version: 4.12.14
+      specifier: 4.12.16
+      version: 4.12.16
     typescript:
       specifier: 6.0.3
       version: 6.0.3
@@ -25,10 +25,10 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: 0.7.6
-        version: 0.7.6(hono@4.12.14)(zod@4.3.6)
+        version: 0.7.6(hono@4.12.16)(zod@4.3.6)
       hono:
         specifier: 'catalog:'
-        version: 4.12.14
+        version: 4.12.16
       zod:
         specifier: 4.3.6
         version: 4.3.6
@@ -59,7 +59,7 @@ importers:
         version: 1.168.23(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       hono:
         specifier: 'catalog:'
-        version: 4.12.14
+        version: 4.12.16
       react:
         specifier: 19.2.5
         version: 19.2.5
@@ -1073,8 +1073,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  hono@4.12.14:
-    resolution: {integrity: sha512-am5zfg3yu6sqn5yjKBNqhnTX7Cv+m00ox+7jbaKkrLMRJ4rAdldd1xPd/JzbBWspqaQv6RSTrgFN95EsfhC+7w==}
+  hono@4.12.16:
+    resolution: {integrity: sha512-jN0ZewiNAWSe5khM3EyCmBb250+b40wWbwNILNfEvq84VREWwOIkuUsFONk/3i3nqkz7Oe1PcpM2mwQEK2L9Kg==}
     engines: {node: '>=16.9.0'}
 
   is-binary-path@2.1.0:
@@ -1719,9 +1719,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/zod-validator@0.7.6(hono@4.12.14)(zod@4.3.6)':
+  '@hono/zod-validator@0.7.6(hono@4.12.16)(zod@4.3.6)':
     dependencies:
-      hono: 4.12.14
+      hono: 4.12.16
       zod: 4.3.6
 
   '@img/colour@1.1.0': {}
@@ -2221,7 +2221,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  hono@4.12.14: {}
+  hono@4.12.16: {}
 
   is-binary-path@2.1.0:
     dependencies:
