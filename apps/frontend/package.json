@@ -12,14 +12,14 @@
 		"@aiharanaoya/ui": "0.1.0",
 		"@app/backend": "workspace:*",
 		"@tanstack/react-query": "5.100.9",
-		"@tanstack/react-router": "1.169.1",
+		"@tanstack/react-router": "1.169.2",
 		"hono": "catalog:",
 		"react": "19.2.5",
 		"react-dom": "19.2.5"
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "4.2.4",
-		"@tanstack/router-plugin": "1.167.33",
+		"@tanstack/router-plugin": "1.167.34",
 		"@types/react": "19.2.14",
 		"@types/react-dom": "19.2.3",
 		"@vitejs/plugin-react": "6.0.1",
