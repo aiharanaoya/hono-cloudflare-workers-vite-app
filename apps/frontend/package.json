@@ -9,7 +9,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@aiharanaoya/ui": "0.1.0",
+		"@aiharanaoya/ui": "0.2.0",
 		"@app/backend": "workspace:*",
 		"@tanstack/react-query": "5.100.14",
 		"@tanstack/react-router": "1.170.8",
