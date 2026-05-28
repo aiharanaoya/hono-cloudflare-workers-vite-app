@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     hono:
-      specifier: 4.12.22
-      version: 4.12.22
+      specifier: 4.12.23
+      version: 4.12.23
     typescript:
       specifier: 6.0.3
       version: 6.0.3
@@ -25,10 +25,10 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: 0.8.0
-        version: 0.8.0(hono@4.12.22)(zod@4.4.3)
+        version: 0.8.0(hono@4.12.23)(zod@4.4.3)
       hono:
         specifier: 'catalog:'
-        version: 4.12.22
+        version: 4.12.23
       zod:
         specifier: 4.4.3
         version: 4.4.3
@@ -59,7 +59,7 @@ importers:
         version: 1.170.8(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       hono:
         specifier: 'catalog:'
-        version: 4.12.22
+        version: 4.12.23
       react:
         specifier: 19.2.6
         version: 19.2.6
@@ -1036,8 +1036,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  hono@4.12.22:
-    resolution: {integrity: sha512-7fvVPbB92zNRsQke+uiRGwtTuef0tB2Dg4hWxYfFNvkQhIltWoyi0ONReM5LWA+jJWS3nfT5lTq+qbsIpX0IQw==}
+  hono@4.12.23:
+    resolution: {integrity: sha512-eIaZ9qDgu7XV0pxOCrg7/WhnQ6Ivm22UcxhXx/A3dcbqbbYgBEkc6e/J/s7j2tS96zoB0S9VBdLwQNCWwUo4LA==}
     engines: {node: '>=16.9.0'}
 
   isbot@5.1.40:
@@ -1659,9 +1659,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/zod-validator@0.8.0(hono@4.12.22)(zod@4.4.3)':
+  '@hono/zod-validator@0.8.0(hono@4.12.23)(zod@4.4.3)':
     dependencies:
-      hono: 4.12.22
+      hono: 4.12.23
       zod: 4.4.3
 
   '@img/colour@1.1.0': {}
@@ -2126,7 +2126,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  hono@4.12.22: {}
+  hono@4.12.23: {}
 
   isbot@5.1.40: {}
 
