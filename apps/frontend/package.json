@@ -12,7 +12,7 @@
 		"@aiharanaoya/ui": "0.2.1",
 		"@app/backend": "workspace:*",
 		"@tanstack/react-query": "5.101.0",
-		"@tanstack/react-router": "1.170.15",
+		"@tanstack/react-router": "1.170.16",
 		"hono": "catalog:",
 		"react": "19.2.7",
 		"react-dom": "19.2.7"
