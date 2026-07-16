@@ -3,7 +3,7 @@ packages:
 
 catalog:
   typescript: "6.0.3"
-  hono: "4.12.29"
+  hono: "4.12.30"
 
 onlyBuiltDependencies:
   - workerd
